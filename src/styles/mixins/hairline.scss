@@ -1,0 +1,79 @@
+@use 'sass:math';
+
+$color: border-color-base;
+$media: screen;
+$feature: -webkit-min-device-pixel-ratio;
+
+@mixin _border-scale($dpr, $border-radius) {
+  width: 100% * $dpr;
+  height: 100% * $dpr;
+  transform: scale(math.div(1, $dpr));
+  transform-origin: 0 0;
+  border-radius: $border-radius * $dpr;
+}
+
+@mixin _border-base() {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+}
+
+@mixin hairline($positions: top right bottom left, $border-color: $color, $border-radius: 0) {
+  position: relative;
+
+  &::after {
+    @include _border-base();
+    @each $position in $positions {
+      border-#{$position}: 1px solid map-get($colors-light, $border-color);
+
+      .theme-dark & {
+        border-#{$position}: 1px solid map-get($colors-dark, $border-color);
+      }
+    }
+
+    @media #{$media} and ($feature: 1) {
+      @include _border-scale(1, $border-radius);
+    }
+
+    @media #{$media} and ($feature: 1.5) {
+      @include _border-scale(1.5, $border-radius);
+    }
+
+    @media #{$media} and ($feature: 2) {
+      @include _border-scale(2, $border-radius);
+    }
+
+    @media #{$media} and ($feature: 3) {
+      @include _border-scale(3, $border-radius);
+    }
+  }
+}
+
+@mixin line($positions: top right bottom left, $border-color: $color, $border-radius: 0) {
+  position: relative;
+
+  &::after {
+    @include _border-base();
+    @each $position in $positions {
+      border-#{$position}: 1px solid $border-color;
+    }
+
+    @media #{$media} and ($feature: 1) {
+      @include _border-scale(1, $border-radius);
+    }
+
+    @media #{$media} and ($feature: 1.5) {
+      @include _border-scale(1.5, $border-radius);
+    }
+
+    @media #{$media} and ($feature: 2) {
+      @include _border-scale(2, $border-radius);
+    }
+
+    @media #{$media} and ($feature: 3) {
+      @include _border-scale(3, $border-radius);
+    }
+  }
+}

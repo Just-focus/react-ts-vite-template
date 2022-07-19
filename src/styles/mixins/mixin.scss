@@ -1,0 +1,24 @@
+// 背景色
+@mixin bg-color($key, $opacity: 1) {
+  background-color: rgba(map-get($colors-light, $key), $opacity);
+  .theme-dark & {
+    background-color: rgba(map-get($colors-dark, $key), $opacity);
+  }
+}
+
+// text色
+@mixin text-color($key, $opacity: 1) {
+  color: rgba(map-get($colors-light, $key), $opacity);
+  .theme-dark & {
+    color: rgba(map-get($colors-dark, $key), $opacity);
+  }
+}
+
+// border色
+@mixin border-color($key) {
+  border-color: map-get($colors-light, $key);
+
+  .theme-dark & {
+    border-color: map-get($colors-dark, $key);
+  }
+}

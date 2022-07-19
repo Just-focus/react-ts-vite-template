@@ -1,0 +1,91 @@
+{
+  "presets": [
+    "@babel/preset-env",
+    "@babel/preset-react",
+    "@babel/preset-typescript"
+  ],
+  "plugins": [
+    [
+      "@babel/plugin-transform-runtime",
+      {
+        "corejs": {
+          "version": 3,
+          "proposals": true
+        }
+      }
+    ],
+    [
+      "import",
+      {
+        "libraryName": "@bigboy/movie-component-lazyimage",
+        "libraryDirectory": "es",
+        "camel2DashComponentName": false,
+        "style": true
+      },
+      "@bigboy/movie-component-lazyimage"
+    ],
+    [
+      "import",
+      {
+        "libraryName": "@bigboy/bigboy-component-toast",
+        "libraryDirectory": "es",
+        "camel2DashComponentName": false,
+        "style": "css"
+      },
+      "@bigboy/bigboy-component-toast"
+    ],
+    [
+      "import",
+      {
+        "libraryName": "@bigboy/movie-component-popup",
+        "libraryDirectory": "es",
+        "camel2DashComponentName": false,
+        "style": "css"
+      },
+      "@bigboy/movie-component-popup"
+    ],
+    [
+      "import",
+      {
+        "libraryName": "@bigboy/bigboy-component-navbar",
+        "libraryDirectory": "es",
+        "camel2DashComponentName": false,
+        "style": "css"
+      },
+      "@bigboy/bigboy-component-navbar"
+    ],
+    [
+      "import",
+      {
+        "libraryName": "@bigboy/movie-component-list",
+        "libraryDirectory": "es",
+        "camel2DashComponentName": false,
+        "style": true
+      },
+      "@bigboy/movie-component-list"
+    ],
+    [
+      "import",
+      {
+        "libraryName": "@bigboy/bigboy-component-switch",
+        "libraryDirectory": "es",
+        "camel2DashComponentName": false,
+        "style": true
+      },
+      "@bigboy/bigboy-component-switch"
+    ],
+    [
+      "@babel/plugin-proposal-decorators",
+      {
+        "legacy": true
+      }
+    ],
+    "@babel/plugin-proposal-class-properties",
+    "@babel/plugin-syntax-dynamic-import",
+    "@babel/plugin-proposal-private-methods"
+  ],
+  "ignore": [
+    "node_modules",
+    "dist"
+  ]
+}

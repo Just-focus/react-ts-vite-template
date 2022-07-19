@@ -1,0 +1,100 @@
+// 浅色
+$colors-light: (
+  fill-base: #fff,
+  fill-body: #f5f6f8, // 组件默认背景
+  fill-button-add: #fff, // 页面背景
+  fill-button: #bf0003, // 按钮背景
+  fill-main: #efefef, // 组件基本颜色
+  fill-mask: rgba(0, 0, 0, 0.4), // 遮罩背景
+
+  color-text-base: #000, // 基本色
+  color-text-base-inverse: #fff, // 基本 - 反色
+  color-text-mian: #333333, // 基本色
+  color-text-secondary: #7b7e86, // 辅助色
+  color-text-third: #96999f, // 辅助色
+  color-text-forth: #96999f, // 辅助色
+  color-text-fifth: #989ba1, // 辅助色
+  color-text-sixth: #8e9094, // 辅助色
+  color-text-seventh: #fedb41,
+  color-text-eighth: #bec9dc,
+  color-text-ninth: #f2b257,
+  color-text-tenth: #fff,
+  color-text-h1: #4e5158,
+  color-text-placeholder: #bdbec2, // 文本框提示
+  color-text-disabled: #7b7e86, // 失效
+  color-text-caption: #888, // 辅助描述
+  color-text-paragraph: #333, // 头部，段落
+  color-text-warning: #c60100,
+  color-text-success: #fff, // 激活辅助色
+
+  color-icon-base: #c60100, // 许多小图标的背景，比如一些小圆点，加减号
+
+  brand-primary: #108ee9,
+  brand-success: #6abf47,
+  brand-warning: #fbb21a,
+  brand-error: #f4333c,
+  brand-important: #ff5b05, // 用于小红点
+  brand-wait: #108ee9,
+
+  border-color-base: rgba(183, 191, 204, 0.3), // border 底色
+  border-color-main: #e5e5e5, // 边框色
+  border-color-secondary: #e8e8e8, // 边框色
+
+  primary-button-fill: #f5f6f8,  // button 相关颜色
+  primary-button-color: #333333,
+  warning-button-fill: #c60100,
+  warning-button-color: #c60100,
+  normal-button-fill: #F5F6F7,
+  normal-button-color: #989ba1,
+);
+
+
+// 深色
+$colors-dark: (
+  fill-base: #2c2c2c,
+  fill-body: #222,
+  fill-button: #8e1f27,
+  fill-button-add: #959595,
+  fill-main: #1f1f1f,
+  fill-mask: rgba(0, 0, 0, 0.4),
+
+  color-text-base: #fff,
+  color-text-base-inverse: #000,
+  color-text-mian: #959595,
+  color-text-secondary: #5a5d63,
+  color-text-third: #4e5158,
+  color-text-forth: #7b7e86,
+  color-text-fifth: #7b7e86,
+  color-text-sixth: #8e9094,
+  color-text-seventh: #d1ae15,
+  color-text-eighth: #8a9cb8,
+  color-text-ninth: #d49338,
+  color-text-tenth: #8E9094,
+  color-text-h1: #8e9094,
+  color-text-placeholder: #5a5d63,
+  color-text-disabled: #7b7e86,
+  color-text-caption: #888,
+  color-text-paragraph: #959595,
+  color-text-warning: #99222c,
+  color-text-success: #959595,
+
+  color-icon-base: #99222c,
+
+  brand-primary: #108ee9,
+  brand-success: #6abf47,
+  brand-warning: #b88614,
+  brand-error: #f4333c,
+  brand-important: #ff5b05,
+  brand-wait: #108ee9,
+
+  border-color-base: #1b1b1b,
+  border-color-main: #1f1f1f,
+  border-color-secondary: #1f1f1f,
+
+  primary-button-fill: #222,
+  primary-button-color: #959595,
+  warning-button-fill: #1F1F1F,
+  warning-button-color: #99222c,
+  normal-button-fill: #1F1F1F,
+  normal-button-color: #7b7e86,
+);
